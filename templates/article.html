@@ -9,7 +9,7 @@
 		{{ article.content }}
 
 		<div id="article_meta">
-			{% if not article.category == 'posts' %}
+			{% if not article.category == 'posts' and not article.category == 'blog' %}
 				Category:
 					<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
 			{% endif %}
