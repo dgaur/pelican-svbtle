@@ -1,6 +1,9 @@
+<header>
 {% if article and article.author %}
-	<header>
-		<h1>{{ article.author }}'s blog</h1>
-		<h3>Posted {{ article.locale_date }}</h3>
-	</header>
+	<h1>{{ article.author }}'s blog</h1>
+	<h3>Posted {{ article.locale_date }}</h3>
+{% else %}
+	{# subheader on top of "content column", e.g., for the "tag", etc #}
+	<h3>{% block subheader %}{% endblock %}</h3>
 {% endif %}
+</header>
