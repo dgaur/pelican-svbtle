@@ -5,7 +5,7 @@
 	<dl id="tag_list">
 		<ul>
 			{% for tag in tag_cloud|sort %}
-				<li class="tag-{{ tag.1 }}"><a href="/tag/{{ tag.0 }}.html">{{ tag.0 }}</a></li>
+				<li class="tag-{{ tag.1 }}"><a href="/tag/{{ tag.0|lower|replace(" ", "-")|replace(".", "") }}.html">{{ tag.0 }}</a></li>
 			{% endfor %}
 		</ul>
 	</dl>
