@@ -3,6 +3,10 @@
 Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with
 a few minor changes for use with [Pelican](http://pelican.notmyidea.org).
 
+**Note that this particular repository is my personal fork, not the**
+**[original source/theme](https://github.com/wting/pelican-svbtle).**
+
+
 ## DEMO
 
 You can see the [theme in
